@@ -1,0 +1,118 @@
+body{
+    background-color: #EDEDED;
+    width: 100%;
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background: #DFE3EE;
+    color: #363753;
+}
+.division__usuario-nombre{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+.apartados a{
+    color: #363753;
+}
+.nombre{
+    font-family: var(--kablammo), cursive;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.apartados{
+    display: flex;
+    font-family: var(--alfa);
+    list-style: none;
+    width: 55%;
+    justify-content: space-around;
+    font-size: 13px;
+    color: #363753;
+}
+
+.items__apartados a{
+    text-decoration: none;
+}
+.imagen{
+    height: 30px;
+    margin-right: 1rem;
+    background-color: white;
+    border-radius: 25px;
+}
+
+@media (max-width:768px){
+    header{
+        width: 100%;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        height: 40px;
+        background-color: #DFE3EE;
+        color: #363753;
+    }
+    .division__usuario-nombre{
+        display: flex;
+        justify-content: center;
+        width: 40%;
+    }
+    .apartados a{
+        color: #363753;
+    }
+    .nombre{
+        font-family: var(--kablammo), cursive;
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+    .apartados{
+        justify-content: center ;
+    }
+    .items__apartados{
+        width: 90px;
+        justify-items: initial;
+        align-items: center;
+        margin: 2px 0;
+    }
+    .items__apartados a{
+        text-decoration: none;
+    }
+    .imagen{
+        height: 30px;
+        margin-right: 1rem;
+        background-color: white;
+        border-radius: 25px;
+    }
+    .items__apartados:not(.correo){
+        display: none;
+    }
+}
+@media (max-width:360px){
+    header{
+        align-items: center;
+    }
+    .division__usuario-nombre{
+        width: 50%;
+        align-items: center;
+    } 
+    .imagen{
+        margin-right: 10px;
+    }
+    .items__apartados:not(.correo){
+        display: none;
+    }
+    .apartados{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+    }
+    .nombre{
+        font-size: 10px;
+    }
+    .correo{
+        font-size: 9px;
+    }
+
+}

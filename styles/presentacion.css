@@ -1,0 +1,119 @@
+.presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.info__principal{
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+.presentacion__texto{
+    display: grid;
+    font-family: var(--bebas);
+    font-size: 50px;
+}
+.presentacion__parrafo{
+    font-family: Arial, cursive;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.redes{
+    display: flex;
+    margin-top: 10px;
+}
+.redes a{
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+}
+.redes a:first-child{
+    margin-left: 0px;
+}
+.redes__items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 100px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 2px #bebebe;
+}
+.foto{
+    height: 150px;
+    border-radius: 50%;
+}
+.sobre__mi{
+    width: 100%;
+    background-color:#363753;
+    height: 400px;
+    display:inline-flex;
+    align-items: center;
+}
+.sobre_mi_texto{
+    width: 500px;
+    margin-left: 40px;
+    color: #5CD2C6;
+}
+.sobre_mi_titulo{
+    font-size: 35px;
+    font-family: var(--alfa);
+}
+.sobre_mi_contenido{
+    font-family: var(--lilita);
+}
+@media (max-width:768px){
+    .presentacion{
+        margin-left: 20px;
+    }
+    .info__principal{
+        width: 60%;
+    }
+    .presentacion__texto{
+        font-size: 40px;
+    }
+    .presentacion__parrafo{
+        font-size: 15px;
+    }
+    .redes a{
+        margin-left: 10px;
+    }
+    .redes a:first-child{
+        margin-left: 0px;
+    }
+
+    .sobre_mi_texto{
+        margin-left: 40px;
+    }
+}
+@media (max-width: 360px){
+    .presentacion{
+        display: flex;
+        justify-content: start;
+        flex-direction:column-reverse;
+        align-items: start;
+        margin-top: 10px;
+    }
+    .foto{
+        width: 100px;
+        height: 100px;
+        justify-content: start;
+    }
+    .redes__items{
+        width: 60px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .info__principal{
+        width: 100%;
+    }
+    .sobre_mi_texto{
+        margin: 20px 0;
+    }
+    .presentacion__texto{
+        font-size: 20px;
+    }
+}
